@@ -1,0 +1,427 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+header{
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 15px 100px;
+	z-index: 10;
+	background: #293140;
+	height: 80px;
+
+
+}
+
+
+
+header .logo{
+
+	position: relative;
+	font-size: 1.5em;
+	color: #FF8C00;;
+	text-decoration: none;
+	font-weight: 800;
+
+}
+
+header .navigation{
+
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 80px;
+	align-items: center;
+	margin: 0px 10%;
+
+
+}
+
+header .navigation li{
+
+	position: relative;
+	list-style: none;
+	margin: 0px;
+	font-size: 20px;
+	height: 100%;
+	padding: 0px 10px;
+
+}
+
+header .navigation li a{
+
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 800;
+	letter-spacing: 1px;
+	top: 35%;
+
+}
+
+header .navigation li:hover {
+
+	background-color: #808080;
+	transition: .5s;
+
+	
+	
+}
+
+
+
+header .dropdown{
+
+	position: relative;
+	
+	width: 180px;
+	height: 80px;
+	margin-right: 10%;
+	padding: 0px 10px;
+	transition: .5s;
+
+	
+}
+
+
+
+
+header .dropbtn{
+
+	position: relative;
+	top: 25%;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	color: #fff;
+	font-size: 20px;
+	background-color: #293140;
+	border-width: 2px;
+	border-radius: 5px;
+	font-weight: 700;
+	cursor: pointer;
+
+}
+
+
+
+
+
+header .dropdown-content{
+	display: none;
+	position: absolute;
+	margin-top: 40px;
+	background-color: #f1f1f1;
+	width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: -10px;
+
+  	
+}
+
+
+header .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+header .checkbtn{
+	display: none;
+}
+
+
+header .usermenu{
+		
+			position: absolute;
+			width: 80px;
+			height: 100%;
+			right: 20px;			 
+
+}
+
+header .userpic{
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+ 
+
+ .userpic img{
+
+
+	width: 80%;
+	height: 80%;
+
+}
+
+.usermenu:hover{
+
+	background-color: #808080;
+	cursor: pointer;
+	transition: .5s;
+
+}
+
+.userpic-content{
+	display: none;
+	position: absolute;
+	margin-top: 0px;
+	background-color: #f1f1f1;
+	width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: -10px;
+}
+
+.userpic-content a{
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.usermenu:hover .userpic-content {display: block;}
+
+.dropdown:hover{background-color: #808080;}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.container{
+
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 80px;
+	background-color: #08457e;
+
+}
+
+
+.text{
+
+	position: relative;
+	top: 15%;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+	text-shadow: 1px 1px 2px #000000;
+	letter-spacing: 1px;
+
+}
+
+
+ .search_bar{
+
+		display: flex;
+		position: relative;
+		width: 80%;
+		height: 100px;
+		top: 27%;
+		margin: auto;
+		padding: 25px;
+		background-color: #293140;
+		border-radius: 5px;
+
+}
+
+.search_bar input, select{
+
+
+		margin: 0px 5px;
+		height: 80%;
+		width: 32%;
+		height: 50px;
+		font-size: 15px;
+		padding: 5px;
+		 border-radius: 5px;
+
+}
+
+.search_bar  #disabled{
+
+		color: grey;
+}
+
+
+
+ .a{
+
+ 	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 5%;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+
+
+}
+
+.search_bar  #submit{
+			
+			font-size: 20px;
+			width: 20%;
+			cursor: pointer;
+			background-color: #FF8C00;
+			border-color: black;
+			font-weight: 700;
+			color: white;
+			margin: 0px 5px;
+			border-radius: 5px;
+
+			
+			
+			
+}
+
+@media (max-width: 1120px){
+
+
+	body{
+		display: flex;
+		flex-direction: column;
+		background-color: #08457e;
+	}
+
+
+	
+
+	header{
+
+		position: fixed;
+		display: flex;
+		
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		height: 10%;
+
+
+
+	}
+
+	header .logo{
+		font-size: 50px;
+		right: 200px;
+
+	}
+
+	header .navigation{
+		display: none;
+	}
+
+	header .dropdown{
+		display: none;
+	}
+
+	header .checkbtn{
+
+		position: relative;
+		display: flex;
+		height: 100%;
+		width: 150px;
+		
+		
+	}
+
+	header .checkbtn:hover{
+
+		background-color: #808080;
+
+	}
+
+
+	header .checkbtn img{
+
+		height: 80%;
+		width: 80%;
+		margin: auto;
+
+
+	}
+
+	.text{
+		font-size: 35px;
+	}
+
+	.search_bar{
+
+		position: relative;
+			display: flex;
+			flex-direction: column;
+			width: 80%;
+			height: 600px;
+
+	}
+
+	.search_bar input, select{
+
+		width: 100%;
+		height: 25%;
+		margin: 0;
+		margin-top: 5%;
+		font-size: 30px;
+		padding-left: 10px;
+
+	}
+
+	.a{
+		font-size: 40px;
+	}
+
+	.search_bar #submit{
+		width: 100%;
+		padding: 0px;
+		height: 25%;
+		margin: 0;
+		margin-top: 5%;
+		padding-left: 10px;
+
+	}
+
+
+	
+	
+
+
+}
+
+.container{
+
+
+
+	}
+
+
+.result{
+
+
+
+
+
+}
+
+
+
